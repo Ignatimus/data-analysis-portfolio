@@ -366,14 +366,14 @@ differently?*
 
 #### Ride Frequency and Duration
 
-![](E:/Divvy%20Trips%20Data/CSV/Total%20Rides.png)
+![](output/Total%20Rides.png)
 
 **Insight**: Members significantly outnumber casual riders in total
 trips, highlighting their consistent usage.
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Average%20Ride%20Length.png)
+![](output/Average%20Ride%20Length.png)
 
 **Surprise**: Casual riders’ average ride length is nearly double that
 of members, reinforcing the idea for leisurely use.
@@ -382,7 +382,7 @@ of members, reinforcing the idea for leisurely use.
 
 #### Time-Based Usage Patterns
 
-![](E:/Divvy%20Trips%20Data/CSV/Bike%20Usage%2024h.png)
+![](output/Bike%20Usage%2024h.png)
 
 **Insight**: Members show clear peaks during rush hours (7–9 and 16–18),
 aligning with work commutes. Casual rides are more evenly distributed,
@@ -390,14 +390,14 @@ with slight peaks on the afternoon.
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Rides%20per%20Week.png)
+![](output/Rides%20per%20Week.png)
 
 **Insight**: Overall rides spike on weekends (especially Saturdays) by
 both groups.
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Avg%20Ride%20Lengdth%20Week.png)
+![](output/Avg%20Ride%20Lengdth%20Week.png)
 
 **Insight**: Again it shouwcases Casual riders’ trips being consistently
 longer than members’, with both groups riding slightly longer on
@@ -405,21 +405,21 @@ weekends.
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Total%20Rides%20in%20Week.png)
+![](output/Total%20Rides%20in%20Week.png)
 
 **Insight**: Showcases the weekly trend for total rides, and confirms
 the alredy established trend.
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Total%20Rides%20in%20Week%20Zoomout.png)
+![](output/Total%20Rides%20in%20Week%20Zoomout.png)
 
 **Insight**: A broader view confirms that while weekend spikes are
 noticeable, the overall ride increase is not drastic.
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Seasonality.png)
+![](output/Seasonality.png)
 
 ***Insight***: Seasonal patterns align with expectations—higher
 ridership in warmer months and lower in the colder ones.
@@ -428,9 +428,9 @@ ridership in warmer months and lower in the colder ones.
 
 #### Bike Type Preferences
 
-![](E:/Divvy%20Trips%20Data/CSV/Casual%20Bike%20Use.png)
+![](output/Casual%20Bike%20Use.png)
 
-![](E:/Divvy%20Trips%20Data/CSV/Member%20Bike%20Use.png)
+![](output/Member%20Bike%20Use.png)
 
 **Insight**: Both groups prefer classic bikes (~60%), but casual riders
 use electric bikes slightly more (38% vs. 35% for members). Dockless
@@ -440,14 +440,14 @@ scooters are negligible for both.
 
 #### Most Popular Start Stations
 
-![](E:/Divvy%20Trips%20Data/CSV/Stations%20Casuals.png)
+![](output/Stations%20Casuals.png)
 
 **Insight**: Casual riders frequent tourist-heavy areas (e.g., Streeter
 Dr & Grand Ave near Navy Pier).
 
 ------------------------------------------------------------------------
 
-![](E:/Divvy%20Trips%20Data/CSV/Stations%20Members.png)
+![](output/Stations%20Members.png)
 
 **Insight**: Members prioritize stations near business districts (e.g.,
 Kingsbury St & Kinzie St in the West Loop).
