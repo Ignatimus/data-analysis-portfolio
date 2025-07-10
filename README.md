@@ -29,9 +29,10 @@ Each project explores real-world problems using data from various domains, and i
 
 Each folder in this repo contains one full project. Inside each project folder, you'll typically find:
 
-- A detailed analysis and code snippets
-- A `Visuals/` folder with all generated graphs and dashboards
-- (Optional) Any relevant datasets or scripts
+* A detailed analysis and code snippets
+* A `Visuals/` folder with all generated graphs and dashboards
+* (Optional) Any relevant datasets or scripts
+* A `README.md` file in every folder explaining its contents and project scope
 
 ---
 
