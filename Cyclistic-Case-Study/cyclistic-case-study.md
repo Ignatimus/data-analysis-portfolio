@@ -373,7 +373,7 @@ trips, highlighting their consistent usage.
 
 ------------------------------------------------------------------------
 
-![](Cyclistic-Case-Study/Visuals/Average-Ride-Length.png)
+![](https://github.com/Ignatimus/data-analysis-portfolio/blob/272b7d170c35b8bcd8eb0acd1313c933bcb6d0ef/Cyclistic-Case-Study/Visuals/Average-Ride-Length.png?raw=true)
 
 **Surprise**: Casual riders’ average ride length is nearly double that
 of members, reinforcing the idea for leisurely use.
@@ -382,7 +382,7 @@ of members, reinforcing the idea for leisurely use.
 
 #### Time-Based Usage Patterns
 
-![](Cyclistic-Case-Study/Visuals/Bike-Usage-24h.png)
+![](Cyclistic-Case-Study/Visuals/Bike-Usage-24h.png?raw=true)
 
 **Insight**: Members show clear peaks during rush hours (7–9 and 16–18),
 aligning with work commutes. Casual rides are more evenly distributed,
