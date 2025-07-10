@@ -462,6 +462,8 @@ Kingsbury St & Kinzie St in the West Loop).
 - **Seasonal Campaigns**: Offer summer deals and winter loyalty perks
 - **Commuter Conversion**: Target casuals with frequent weekday use
 
+------------------------------------------------------------------------
+
 # Final Reflections
 
 This Cyclistic case study was my first hands-on project after completing
