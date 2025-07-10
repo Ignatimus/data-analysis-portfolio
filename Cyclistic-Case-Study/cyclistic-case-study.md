@@ -366,14 +366,14 @@ differently?*
 
 #### Ride Frequency and Duration
 
-![](output/Total_Rides.png)
+![](Cyclistic-Case-Study/Visuals/Total-Rides.png)
 
 **Insight**: Members significantly outnumber casual riders in total
 trips, highlighting their consistent usage.
 
 ------------------------------------------------------------------------
 
-![](Cyclistic-Case-Study/output/Average-Ride-Length.png)
+![](Cyclistic-Case-Study/Visuals/Average-Ride-Length.png)
 
 **Surprise**: Casual riders’ average ride length is nearly double that
 of members, reinforcing the idea for leisurely use.
@@ -382,7 +382,7 @@ of members, reinforcing the idea for leisurely use.
 
 #### Time-Based Usage Patterns
 
-![](output/Bike_Usage_2024h.png)
+![](Cyclistic-Case-Study/Visuals/Bike-Usage-24h.png)
 
 **Insight**: Members show clear peaks during rush hours (7–9 and 16–18),
 aligning with work commutes. Casual rides are more evenly distributed,
@@ -390,14 +390,14 @@ with slight peaks on the afternoon.
 
 ------------------------------------------------------------------------
 
-![](output/Rides_per_Week.png)
+![](Cyclistic-Case-Study/Visuals/Rides-per-Week.png)
 
 **Insight**: Overall rides spike on weekends (especially Saturdays) by
 both groups.
 
 ------------------------------------------------------------------------
 
-![](output/Avg_Ride_Lengdth_Week.png)
+![](Cyclistic-Case-Study/Visuals/Avg-Ride-Length-Week.png)
 
 **Insight**: Again it shouwcases Casual riders’ trips being consistently
 longer than members’, with both groups riding slightly longer on
@@ -405,21 +405,21 @@ weekends.
 
 ------------------------------------------------------------------------
 
-![](output/Total_Rides_in_Week.png)
+![](Cyclistic-Case-Study/Visuals/Total-Rides-in-Week.png)
 
 **Insight**: Showcases the weekly trend for total rides, and confirms
 the alredy established trend.
 
 ------------------------------------------------------------------------
 
-![](output/Total_Rides_in_Week_Zoomout.png)
+![](Cyclistic-Case-Study/Visuals/Total-Rides-in-Week-Zoomout.png)
 
 **Insight**: A broader view confirms that while weekend spikes are
 noticeable, the overall ride increase is not drastic.
 
 ------------------------------------------------------------------------
 
-![](output/Seasonality.png)
+![](Cyclistic-Case-Study/Visuals/Seasonality.png)
 
 ***Insight***: Seasonal patterns align with expectations—higher
 ridership in warmer months and lower in the colder ones.
@@ -428,9 +428,9 @@ ridership in warmer months and lower in the colder ones.
 
 #### Bike Type Preferences
 
-![](output/Casual_Bike_Use.png)
+![](Cyclistic-Case-Study/Visuals/Casual-Bike-Use.png)
 
-![](output/Member_Bike_Use.png)
+![](Cyclistic-Case-Study/Visuals/Member-Bike-Use.png)
 
 **Insight**: Both groups prefer classic bikes (~60%), but casual riders
 use electric bikes slightly more (38% vs. 35% for members). Dockless
@@ -440,14 +440,14 @@ scooters are negligible for both.
 
 #### Most Popular Start Stations
 
-![](output/Stations_Casuals.png)
+![](Cyclistic-Case-Study/Visuals/Stations-Casuals.png)
 
 **Insight**: Casual riders frequent tourist-heavy areas (e.g., Streeter
 Dr & Grand Ave near Navy Pier).
 
 ------------------------------------------------------------------------
 
-![](cyclistic-case-study/output/Stations_Members.png)
+![](Cyclistic-Case-Study/Visuals/Stations-Members.png)
 
 **Insight**: Members prioritize stations near business districts (e.g.,
 Kingsbury St & Kinzie St in the West Loop).
