@@ -382,7 +382,7 @@ of members, reinforcing the idea for leisurely use.
 
 #### Time-Based Usage Patterns
 
-![](data-analysis-portfolio/Cyclistic-Case-Study/Visuals/Bike-Usage-24h.png?raw=true)
+![](Ignatimus/data-analysis-portfolio/Cyclistic-Case-Study/Visuals/Bike-Usage-24h.png?raw=true)
 
 **Insight**: Members show clear peaks during rush hours (7–9 and 16–18),
 aligning with work commutes. Casual rides are more evenly distributed,
