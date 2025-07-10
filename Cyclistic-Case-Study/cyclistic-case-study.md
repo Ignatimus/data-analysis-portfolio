@@ -373,7 +373,7 @@ trips, highlighting their consistent usage.
 
 ------------------------------------------------------------------------
 
-![](output/Average_Ride_Length.png)
+![](Cyclistic-Case-Study/output/Average-Ride-Length.png)
 
 **Surprise**: Casual riders’ average ride length is nearly double that
 of members, reinforcing the idea for leisurely use.
