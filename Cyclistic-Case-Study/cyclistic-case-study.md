@@ -362,9 +362,9 @@ differently?*
 - **Members**: Commute-focused, ride more during weekdays and rush
   hours, prefer business district stations
 
-### Vizualizations
+## Vizualizations
 
-#### Ride Frequency and Duration
+### Ride Frequency and Duration
 
 ![](https://github.com/Ignatimus/data-analysis-portfolio/blob/6d75af10cc32e71e6a1be36c8f92ff440b7b5f3b/Cyclistic-Case-Study/Visuals/Total-Rides.png?raw=true)
 
@@ -380,7 +380,7 @@ of members, reinforcing the idea for leisurely use.
 
 ------------------------------------------------------------------------
 
-#### Time-Based Usage Patterns
+### Time-Based Usage Patterns
 
 ![](https://github.com/Ignatimus/data-analysis-portfolio/blob/63ef9bebbbda15e766f6dc42eff84f1b40808b0b/Cyclistic-Case-Study/Visuals/Bike-Usage-24h.png?raw=true)
 
@@ -421,12 +421,12 @@ noticeable, the overall ride increase is not drastic.
 
 ![](https://github.com/Ignatimus/data-analysis-portfolio/blob/6761b42624b332ba2b9411c5814073af72d27b39/Cyclistic-Case-Study/Visuals/Seasonality.png?raw=true)
 
-***Insight***: Seasonal patterns align with expectations—higher
+**Insight**: Seasonal patterns align with expectations—higher
 ridership in warmer months and lower in the colder ones.
 
 ------------------------------------------------------------------------
 
-#### Bike Type Preferences
+### Bike Type Preferences
 
 ![](https://github.com/Ignatimus/data-analysis-portfolio/blob/6761b42624b332ba2b9411c5814073af72d27b39/Cyclistic-Case-Study/Visuals/Casual-Bike-Use.png?raw=true)
 
@@ -438,7 +438,7 @@ scooters are negligible for both.
 
 ------------------------------------------------------------------------
 
-#### Most Popular Start Stations
+### Most Popular Start Stations
 
 ![](https://github.com/Ignatimus/data-analysis-portfolio/blob/6761b42624b332ba2b9411c5814073af72d27b39/Cyclistic-Case-Study/Visuals/Stations-Casuals.png?raw=true)
 
