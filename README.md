@@ -18,10 +18,10 @@ Each project explores real-world problems using data from various domains, and i
 ## 🧰 Tools & Languages to expect:
 
 * **Spreadsheets** (Excel, Google Sheets)
-* **R** (tidyverse, ggplot2, RMarkdown)
-* **SQL** (PostgreSQL, BigQuery)
+* **R** (tidyverse, ggplot2, RStudio)
+* **SQL** (BigQuery)
 * **Tableau** (dashboards and stories)
-* **Python** (pandas, matplotlib, seaborn, Jupyter)
+* **Python** 
 
 ---
 
