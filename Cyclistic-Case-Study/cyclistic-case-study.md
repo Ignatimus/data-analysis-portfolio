@@ -366,7 +366,7 @@ differently?*
 
 #### Ride Frequency and Duration
 
-![](Cyclistic-Case-Study/Visuals/Total-Rides.png)
+![](https://github.com/Ignatimus/data-analysis-portfolio/blob/6d75af10cc32e71e6a1be36c8f92ff440b7b5f3b/Cyclistic-Case-Study/Visuals/Total-Rides.png?raw=true)
 
 **Insight**: Members significantly outnumber casual riders in total
 trips, highlighting their consistent usage.
