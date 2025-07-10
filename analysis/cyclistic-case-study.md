@@ -440,14 +440,14 @@ scooters are negligible for both.
 
 #### Most Popular Start Stations
 
-![](output/Stations%20Casuals.png)
+![](output/Stations_Casuals.png)
 
 **Insight**: Casual riders frequent tourist-heavy areas (e.g., Streeter
 Dr & Grand Ave near Navy Pier).
 
 ------------------------------------------------------------------------
 
-![](output/Stations%20Members.png)
+![](cyclistic-case-study/output/Stations_Members.png)
 
 **Insight**: Members prioritize stations near business districts (e.g.,
 Kingsbury St & Kinzie St in the West Loop).
