@@ -11,7 +11,7 @@ Each project explores real-world problems using data from various domains, and i
 * Apply and demonstrate concepts learned during online courses and academic studies
 * Build a **diverse collection of case studies** using real datasets
 * Explore multiple tools and methods to solve business problems
-( Share my progress with potential employers, mentors, and fellow learners
+* Share my progress with potential employers, mentors, and fellow learners
 
 ---
 
@@ -20,8 +20,9 @@ Each project explores real-world problems using data from various domains, and i
 * **Spreadsheets** (Excel, Google Sheets)
 * **R** (tidyverse, ggplot2, RStudio)
 * **SQL** (BigQuery)
-* **Tableau** (dashboards and stories)
-* **Python** 
+* **Tableau**
+* **Power Bi** 
+* **Python** (numpy, pandas, matplotlib, seaborn, plotly, scikit learn
 
 ---
 
