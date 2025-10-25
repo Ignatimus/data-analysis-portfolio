@@ -1,5 +1,14 @@
 [Jupyter Notebook Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) 
 
+## Tools Used
+* JupyterLab
+* Python
+* Numpy
+* Pandas
+* Matplotlib (Pyplot)
+* Seaborn
+* Sklearn (.metrics, .linear_model, .tree, .model_selection, .ensamble, .xgboost)
+
 ## Business Problem
 Salifort Motors seeks to improve employee retention and answer the following question:
 **What’s likely to make an employee leave the company?**
