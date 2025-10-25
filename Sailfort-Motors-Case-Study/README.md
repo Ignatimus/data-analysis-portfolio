@@ -1,6 +1,10 @@
+# Sailfort Motors Case Study
+
+** By Anatoli Ignatov | October 2025**
+
 [Jupyter Notebook Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) 
   
-## About the repo
+## 🗂️ About the repo
 This folder contains a .ipynb **Jupyter Notebook** and supporting materials for the **Sailfort Motors Case Study Capstone Project**. Inside the notebook you will find:
 1. **Project Summary** - Key insights, dataset description, and business problem
 2. **Full Project Code** - Implemented using the PACE framework, including all input code, outputs, and model development steps
@@ -10,7 +14,7 @@ Additionally, there is a **Visualizations** folder featuring all the output grap
 
 This **README** also includes a link to launch the notebook via [Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb), which I recommend using instead of opening the notebook directly from this repo (note: it may take a minute to load). For easier navigation within the notebook, use the **“Table of Contents”** tab on the left.
 
-## Dataset
+## 📂 Dataset
 Available on [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv). It contains 15,000 rows and 10 columns. 
 Variable  |Description |
 -----|-----|
@@ -25,7 +29,7 @@ promotion_last_5years|Whether or not the employee was promoted in the last 5 yea
 Department|The employee's department
 salary|The employee's salary (U.S. dollars)
 
-## Tools Used
+## 🛠️ Tools Used
 * JupyterLab
    * Python
       * Numpy
@@ -34,11 +38,11 @@ salary|The employee's salary (U.S. dollars)
       * Seaborn
       * Sklearn (.metrics, .linear_model, .tree, .model_selection, .ensamble, .xgboost)
 
-## Business Problem
+## ❓ Business Problem
 Salifort Motors seeks to improve employee retention and answer the following question:
 **What’s likely to make an employee leave the company?**
 
-## Key Insights from Data Analysis
+## 💡 Key Insights from Data Analysis
 1. Two groups of employees tend to leave:
     * **Underworked employees** – possibly dismissed due to low output.
     * **Overworked employees** – likely resigned from burnout.
@@ -48,7 +52,7 @@ Salifort Motors seeks to improve employee retention and answer the following que
 5. The optimal workload appears to be 3–4 projects per employee.
 6. `Satisfaction level`, `number of projects`, `evaluation score`, and `time at company` are key predictors of turnover.
 
-## Model Development and Evaluation
+## 🧠 Model Development and Evaluation
 Five models were trained and compared:
 * **Logistic** Regression – High recall but many false positives.
 * **Decision** Tree (untuned) – Overfitted the data.
@@ -58,7 +62,7 @@ Five models were trained and compared:
 
 Across all datasets, **Random Forest** achieved the best balance between accuracy and generalization, followed closely by **XGBoost**.
 
-## Recommendations
+## ✅ Recommendations
 1. Limit the number of projects assigned per employee.
 2. Investigate dissatisfaction among employees with ~4 years of tenure.
 3. Reward or compensate long working hours, or reduce workload expectations.
