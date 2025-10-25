@@ -2,13 +2,13 @@
 
 Welcome to my data analysis portfolio. This repository will be built into a collection of practical, end-to-end case studies designed to showcase my analytical thinking, technical skills, and business insight.
 
-Each project explores real-world problems using data from various domains, and includes data cleaning, transformation, visualization, interpretation, and recommendations.
+Each project explores real-world problems using data from various domains, and includes data cleaning, transformation, visualization, interpretation, machine learning and recommendations.
 
 ---
 
 ## 🎯 Goals of This Portfolio
 
-* Apply and demonstrate concepts learned in the **Google Data Analytics Certificate** and academic studies
+* Apply and demonstrate concepts learned during online courses and academic studies
 * Build a **diverse collection of case studies** using real datasets
 * Explore multiple tools and methods to solve business problems
 ( Share my progress with potential employers, mentors, and fellow learners
