@@ -2,12 +2,12 @@
 
 ## Tools Used
 * JupyterLab
-* Python
-* Numpy
-* Pandas
-* Matplotlib (Pyplot)
-* Seaborn
-* Sklearn (.metrics, .linear_model, .tree, .model_selection, .ensamble, .xgboost)
+   * Python
+      * Numpy
+      * Pandas
+      * Matplotlib (Pyplot)
+      * Seaborn
+      * Sklearn (.metrics, .linear_model, .tree, .model_selection, .ensamble, .xgboost)
 
 ## Business Problem
 Salifort Motors seeks to improve employee retention and answer the following question:
