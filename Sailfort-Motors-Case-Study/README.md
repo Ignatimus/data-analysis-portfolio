@@ -5,7 +5,7 @@
    * Python
       * Numpy
       * Pandas
-      * Matplotlib (Pyplot)
+      * Matplotlib (.pyplot)
       * Seaborn
       * Sklearn (.metrics, .linear_model, .tree, .model_selection, .ensamble, .xgboost)
 
