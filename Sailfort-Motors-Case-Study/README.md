@@ -54,3 +54,12 @@ Across all datasets, **Random Forest** achieved the best balance between accurac
 4. Clarify company policies regarding overtime and workload.
 5. Encourage open communication about workload and recognition.
 6. Adjust evaluation criteria to avoid rewarding only overworked employees.
+   
+## About the repo
+This folder contains a Jupyter Notebook and supporting materials for the Sailfort Motors Case Study Capstone Project. Inside the notebook you will find:
+1. **Project Summary** - Key insights, dataset description, and business problem
+2. **Full Project Code** - Implemented using the PACE framework, including all input code, outputs, and model development steps
+3. **Final Reflecions** - Personal reflections on the project, challenges, and learning outcomes
+Additionally, there is a Visualizations folder featuring all the output graphs from the notebook.
+This README also includes a link to launch the notebook via Binder, which I recommend using instead of opening the notebook directly from this repo.
+
