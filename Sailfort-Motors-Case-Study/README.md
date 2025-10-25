@@ -12,7 +12,7 @@ This folder contains a .ipynb **Jupyter Notebook** and supporting materials for 
 
 Additionally, there is a **Visualizations** folder featuring all the output graphs from the notebook.
 
-This **README** also includes a link to launch the notebook via [Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb), which I recommend using instead of opening the notebook directly from this repo (note: it may take a minute to load). For easier navigation within the notebook, use the **“Table of Contents”** tab on the left.
+This **README** also includes a [link](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) to launch the notebook via **Binder**, which I recommend using instead of opening the notebook directly from this repo (note: it may take a minute to load). For easier navigation within the notebook, use the **“Table of Contents”** tab on the left.
 
 ## 📎 Dataset
 Available on [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv). It contains 15,000 rows and 10 columns. 
