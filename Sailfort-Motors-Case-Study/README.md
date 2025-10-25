@@ -54,8 +54,8 @@ Salifort Motors seeks to improve employee retention and answer the following que
 
 ## 🧠 Model Development and Evaluation
 Five models were trained and compared:
-* **Logistic** Regression – High recall but many false positives.
-* **Decision** Tree (untuned) – Overfitted the data.
+* **Logistic Regression** – High recall but many false positives.
+* **Decision Tree (untuned)** – Overfitted the data.
 * **Tuned Decision Tree** – Improved performance, reduced overfitting.
 * **Random Forest** – Best generalization and stable performance.
 * **XGBoost** – Highest accuracy but mild overfitting.
