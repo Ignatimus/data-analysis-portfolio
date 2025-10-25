@@ -21,7 +21,7 @@ Each project explores real-world problems using data from various domains, and i
 * **R** (tidyverse, ggplot2, RStudio)
 * **SQL** (BigQuery)
 * **Tableau**
-* **Power Bi** 
+* **Power BI** 
 * **Python** (numpy, pandas, matplotlib, seaborn, plotly, scikit learn
 
 ---
