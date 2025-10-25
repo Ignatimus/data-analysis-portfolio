@@ -1,5 +1,8 @@
 [Jupyter Notebook Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) 
 
+## Dataset
+Available on [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv). It contains 15,000 rows and 10 columns. 
+
 ## Tools Used
 * JupyterLab
    * Python
