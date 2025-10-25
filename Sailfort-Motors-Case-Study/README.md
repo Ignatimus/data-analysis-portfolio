@@ -44,21 +44,21 @@ Salifort Motors seeks to improve employee retention and answer the following que
 
 ## 💡 Key Insights from Data Analysis
 1. Two groups of employees tend to leave:
-    * **Underworked employees** – possibly dismissed due to low output.
-    * **Overworked employees** – likely resigned from burnout.
+    * **Underworked employees** - possibly dismissed due to low output.
+    * **Overworked employees** - likely resigned from burnout.
 2. Employees with 7 projects all left the company.
 3. Employees working 250+ hours per month showed extreme workloads and low satisfaction.
 4. Employees who survive past year 6 rarely leave.
-5. The optimal workload appears to be 3–4 projects per employee.
+5. The optimal workload appears to be 3-4 projects per employee.
 6. `Satisfaction level`, `number of projects`, `evaluation score`, and `time at company` are key predictors of turnover.
 
 ## 🧠 Model Development and Evaluation
 Five models were trained and compared:
-* **Logistic Regression** – High recall but many false positives.
-* **Decision Tree (untuned)** – Overfitted the data.
-* **Tuned Decision Tree** – Improved performance, reduced overfitting.
-* **Random Forest** – Best generalization and stable performance.
-* **XGBoost** – Highest accuracy but mild overfitting.
+* **Logistic Regression** - High recall but many false positives.
+* **Decision Tree (untuned)** - Overfitted the data.
+* **Tuned Decision Tree** - Improved performance, reduced overfitting.
+* **Random Forest** - Best generalization and stable performance.
+* **XGBoost** - Highest accuracy but mild overfitting.
 
 Across all datasets, **Random Forest** achieved the best balance between accuracy and generalization, followed closely by **XGBoost**.
 
