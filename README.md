@@ -22,7 +22,7 @@ Each project explores real-world problems using data from various domains, and i
 * **SQL** (BigQuery)
 * **Tableau**
 * **Power BI** 
-* **Python** (numpy, pandas, matplotlib, seaborn, plotly, scikit learn
+* **Python** (numpy, pandas, matplotlib, seaborn, plotly, scikit learn)
 
 ---
 
