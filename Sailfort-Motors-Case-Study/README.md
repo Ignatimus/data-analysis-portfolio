@@ -4,8 +4,8 @@ Salifort Motors seeks to improve employee retention and answer the following que
 
 ## Key Insights from Data Analysis
 1. Two groups of employees tend to leave:
-  * **Underworked employees** – possibly dismissed due to low output.
-  * **Overworked employees** – likely resigned from burnout.
+    * **Underworked employees** – possibly dismissed due to low output.
+    * **Overworked employees** – likely resigned from burnout.
 2. Employees with 7 projects all left the company.
 3. Employees working 250+ hours per month showed extreme workloads and low satisfaction.
 4. Employees who survive past year 6 rarely leave.
