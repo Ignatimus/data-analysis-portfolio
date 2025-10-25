@@ -1,6 +1,6 @@
 # Sailfort Motors Case Study
 
-** By Anatoli Ignatov | October 2025**
+**By Anatoli Ignatov | October 2025**
 
 [Jupyter Notebook Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) 
   
