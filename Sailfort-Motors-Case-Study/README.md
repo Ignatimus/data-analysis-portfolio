@@ -1,4 +1,4 @@
-# 🏢 Sailfort Motors Case Study - Google Advanced Data Analytics Capstone
+# 🛥️ Sailfort Motors Case Study - Google Advanced Data Analytics Capstone
 
 **By Anatoli Ignatov | October 2025**
 
