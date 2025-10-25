@@ -1,4 +1,14 @@
 [Jupyter Notebook Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) 
+  
+## About the repo
+This folder contains a Jupyter Notebook and supporting materials for the Sailfort Motors Case Study Capstone Project. Inside the notebook you will find:
+1. **Project Summary** - Key insights, dataset description, and business problem
+2. **Full Project Code** - Implemented using the PACE framework, including all input code, outputs, and model development steps
+3. **Final Reflecions** - Personal reflections on the project, challenges, and learning outcomes
+
+Additionally, there is a Visualizations folder featuring all the output graphs from the notebook.
+
+This README also includes a link to launch the notebook via [Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb), which I recommend using instead of opening the notebook directly from this repo.
 
 ## Dataset
 Available on [Kaggle](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction?select=HR_comma_sep.csv). It contains 15,000 rows and 10 columns. 
@@ -54,12 +64,4 @@ Across all datasets, **Random Forest** achieved the best balance between accurac
 4. Clarify company policies regarding overtime and workload.
 5. Encourage open communication about workload and recognition.
 6. Adjust evaluation criteria to avoid rewarding only overworked employees.
-   
-## About the repo
-This folder contains a Jupyter Notebook and supporting materials for the Sailfort Motors Case Study Capstone Project. Inside the notebook you will find:
-1. **Project Summary** - Key insights, dataset description, and business problem
-2. **Full Project Code** - Implemented using the PACE framework, including all input code, outputs, and model development steps
-3. **Final Reflecions** - Personal reflections on the project, challenges, and learning outcomes
-Additionally, there is a Visualizations folder featuring all the output graphs from the notebook.
-This README also includes a link to launch the notebook via Binder, which I recommend using instead of opening the notebook directly from this repo.
 
