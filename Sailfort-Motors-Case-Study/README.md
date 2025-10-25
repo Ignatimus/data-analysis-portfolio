@@ -55,6 +55,7 @@ Five models were trained and compared:
 * **Tuned Decision Tree** – Improved performance, reduced overfitting.
 * **Random Forest** – Best generalization and stable performance.
 * **XGBoost** – Highest accuracy but mild overfitting.
+
 Across all datasets, **Random Forest** achieved the best balance between accuracy and generalization, followed closely by **XGBoost**.
 
 ## Recommendations
