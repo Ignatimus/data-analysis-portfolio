@@ -51,3 +51,5 @@ Clarify company policies regarding overtime and workload.
 Encourage open communication about workload and recognition.
 
 Adjust evaluation criteria to avoid rewarding only overworked employees.
+
+https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb
