@@ -1,3 +1,5 @@
+[Jupyter Notebook Binder](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb) 
+
 ## Business Problem
 Salifort Motors seeks to improve employee retention and answer the following question:
 **What’s likely to make an employee leave the company?**
@@ -28,5 +30,3 @@ Across all datasets, **Random Forest** achieved the best balance between accurac
 4. Clarify company policies regarding overtime and workload.
 5. Encourage open communication about workload and recognition.
 6. Adjust evaluation criteria to avoid rewarding only overworked employees.
-
-https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/HEAD?urlpath=%2Fdoc%2Ftree%2FSailfort-Motors-Case-Study%2FCapstone+Project+Salifort+Motors+Jupyter+Notebook.ipynb
