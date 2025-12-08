@@ -160,7 +160,7 @@ Insights revealed:
 - These neighborhoods consistently perform well across most months, even during seasonal dips.
 - Winter activity is low across all neighborhoods, but some boroughs retain moderate subscriber traffic.
 
-[![Seasonality Dashboard](Visualizations/Seasonal.png)]([https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![Seasonality Dashboard](Visualizations/Seasonal.png)](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
