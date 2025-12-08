@@ -160,6 +160,8 @@ Insights revealed:
 - These neighborhoods consistently perform well across most months, even during seasonal dips.
 - Winter activity is low across all neighborhoods, but some boroughs retain moderate subscriber traffic.
 
+[![Seasonality Dashboard](Visualizations/Seasonal.png)]([https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ---
 
 ### 2️⃣ Summer Trends (Peak-Season Patterns)
@@ -206,8 +208,7 @@ The tab includes several filters that let users drill into detail:
 
 Any filter or map click dynamically updates both the table and maps. This makes the tab suitable for **ad-hoc exploration** by business stakeholders.
 
-### Page 1: Seasonality Analysis
-[![Seasonality Dashboard](Visualizations/Seasonal.png)](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject
+[![Seasonality Dashboard](Visualizations/Maps.png)]([[https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link](https://public.tableau.com/shared/B8NWQJ22X?:display_count=n&:origin=viz_share_link)
 
 ---
 
