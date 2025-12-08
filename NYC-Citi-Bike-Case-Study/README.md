@@ -89,6 +89,8 @@ GROUP BY
   12,
   13 
 ```
+## Final Table
+
 | Variable                | Description                                                |
 | ----------------------- | ---------------------------------------------------------- |
 | usertype                | Type of user (e.g., subscriber vs customer)                |
