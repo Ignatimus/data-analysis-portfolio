@@ -1,11 +1,11 @@
-# Google Fiber - BI Case Study
+# Google Fiber - Google Business Intelligence Case Study
 
 **By Anatoli Ignatov | December 2025**
 
-[Tableau Public Dashboard](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableau Public Dashboard](https://public.tableau.com/shared/64JDZRJ8H?:display_count=n&:origin=viz_share_link)
 
 ## 🗂️ About the repo
-This folder contains the **README** for the **Cyclistic Business Intelligence Capstone Project**. A **Visualizations** folder is included with exported images of the Tableau dashboard. The CSV files are not included due to size limits. 
+This folder contains the **README** for the **Google Fiber Business Intelligence Capstone Project**. A **Visualizations** folder is included with exported images of the Tableau dashboard. The CSV files are included as well. 
 
 Inside this README you will find:  
 1. Dataset sources  
@@ -14,232 +14,120 @@ Inside this README you will find:
 4. Link to the Tableau Public dashboard 
 
 ## 📎 Datasets
-Available on **Google Cloud**: 
-- [NYC Citi Bike Trips](https://console.cloud.google.com/marketplace/details/city-of-new-york/nyc-citi-bike?project=valid-imagery-386312),
-- [Census Bureau US Boundaries](https://console.cloud.google.com/marketplace/product/united-states-census-bureau/us-geographic-boundaries?project=valid-imagery-386312),
-- [GSOD](https://console.cloud.google.com/marketplace/details/noaa-public/gsod?project=valid-imagery-386312)
-- [Cyclistic NYC zip codes](https://docs.google.com/spreadsheets/d/1IIbH-GM3tdmM5tl56PHhqI7xxCzqaBCU0ylItxk_sy0/template/preview#gid=806359255)
+Available on **Google Sheets**: 
+- [Market 1](https://docs.google.com/spreadsheets/d/1a9IKjkvOvYHRx84SyRdp4Sq81EzgeOZPufcRtrUcAIc/template/preview#gid=775366698),
+- [Market 2](https://docs.google.com/spreadsheets/d/19CINdvAwp-2RF5pphkLywZLQJyJu66EOjX6CgrW32nA/template/preview#gid=2065220237),
+- [Market 3](https://docs.google.com/spreadsheets/d/1K6X9ZhjWtbneBss7PQH7IobGCzQ5NzG1hxs1D-hbsZM/template/preview?resourcekey=0-q90E-1XwD8nkNSjs0Ws3-w)
 
 ## 🛠️ Tools Used
 * BigQuery
 * Tableau
 
 ## ❓ Business Problem
-The company’s Customer Growth Team is creating a business plan for next year. They want to understand how their customers are using their bikes; **Their top priority is identifying customer demand at different station locations.**
+The team needs to understand **how often customers call customer support after their first inquiry**. This will help leadership understand how effectively the team can answer customer questions the first time.
 
 ## 🧮 Querying the Data
 ```sql
--- SELECT CLAUSE: Defining output columns
-SELECT 
-    -- User information
-    TRI.usertype,
-    
-    -- Starting location details
-    ZIPSTART.zip_code AS zip_code_start,
-    ZIPSTARTNAME.borough borough_start,
-    ZIPSTARTNAME.neighborhood AS neighborhood_start,
-    
-    -- Ending location details
-    ZIPEND.zip_code AS zip_code_end,
-    ZIPENDNAME.borough borough_end,
-    ZIPENDNAME.neighborhood AS neighborhood_end,
-    
-    -- Trip timing (Adjusting 5 years forward for dashboarding)
-    DATE_ADD(DATE(TRI.starttime), INTERVAL 5 YEAR) AS start_day,
-    DATE_ADD(DATE(TRI.stoptime), INTERVAL 5 YEAR) AS stop_day,
-    
-    -- Weather conditions
-    WEA.temp AS day_mean_temperature,
-    WEA.wdsp AS day_mean_wind_speed,
-    WEA.prcp day_total_precipitation,
-    
-    -- Trip metrics (Grouping trips into 10 minute intervals to reduces the number of rows)
-    ROUND(CAST(TRI.tripduration / 60 AS INT64), -1) AS trip_minutes,
-    COUNT(TRI.bikeid) AS trip_count
+SELECT
+    *
+FROM `your project.fiber.market_1`
+UNION ALL
 
--- PRIMARY DATA SOURCE: Citibike trip records
-FROM 
-    bigquery-public-data.new_york_citibike.citibike_trips AS TRI
+SELECT
+  *
+FROM `your project.fiber.market_2`
+UNION ALL
 
--- GEOGRAPHIC JOINS: Match stations to zip codes
-
-    -- Join start station coordinates to zip code boundaries
-INNER JOIN 
-    bigquery-public-data.geo_us_boundaries.zip_codes ZIPSTART 
-    ON ST_WITHIN(
-        ST_GEOGPOINT(TRI.start_station_longitude, TRI.start_station_latitude),
-        ZIPSTART.zip_code_geom)
-
-    -- Join end station coordinates to zip code boundaries
-INNER JOIN 
-    bigquery-public-data.geo_us_boundaries.zip_codes ZIPEND 
-    ON ST_WITHIN(
-        ST_GEOGPOINT(TRI.end_station_longitude, TRI.end_station_latitude),
-        ZIPEND.zip_code_geom)
-
--- WEATHER DATA JOIN: Daily conditions from Central Park station
-INNER JOIN 
-    bigquery-public-data.noaa_gsod.gsod20* AS WEA 
-    ON PARSE_DATE("%Y%m%d", CONCAT(WEA.year, WEA.mo, WEA.da)) = DATE(TRI.starttime)
-
--- NEIGHBORHOOD DETAILS: Add borough and neighborhood names
-
-    -- Add neighborhood details for starting zip code
-INNER JOIN 
-    `coursera-460808.cyclistic.zip_codes` AS ZIPSTARTNAME 
-    ON ZIPSTART.zip_code = CAST(ZIPSTARTNAME.zip AS STRING)
-
-    -- Add neighborhood details for ending zip code
-INNER JOIN 
-    `coursera-460808.cyclistic.zip_codes` AS ZIPENDNAME 
-    ON ZIPEND.zip_code = CAST(ZIPENDNAME.zip AS STRING)
-
--- FILTERS: Limit data to specific weather station and time period
-WHERE 
-    -- Use only Central Park weather station data
-    WEA.wban = '94728'
-    -- Limit to 2014-2015 trip data
-    AND EXTRACT(YEAR FROM DATE(TRI.starttime)) BETWEEN 2014 AND 2015
-
--- GROUPING: Aggregate by all non-aggregated columns
-GROUP BY 
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+SELECT
+  *
+FROM `your project.market_3`
 ```
 ## 📄 Final Table
 
-| Variable                | Description                                                |
-| ----------------------- | ---------------------------------------------------------- |
-| usertype                | Type of user (e.g., subscriber vs customer)                |
-| zip_code_start          | ZIP code where the trip started                            |
-| borough_start           | Borough where the trip started                             |
-| neighborhood_start      | Neighborhood where the trip started                        |
-| zip_code_end            | ZIP code where the trip ended                              |
-| borough_end             | Borough where the trip ended                               |
-| neighborhood_end        | Neighborhood where the trip ended                          |
-| start_day               | Date when the trip started                                 |
-| stop_day                | Date when the trip ended                                   |
-| day_mean_temperature    | Average daily temperature for that date                    |
-| day_mean_wind_speed     | Average daily wind speed for that date                     |
-| day_total_precipitation | Total daily precipitation for that date                    |
-| trip_minutes            | Duration of the trip in minutes                            |
-| trip_count              | Number of trips aggregated for that date/route combination |
+| Variable     | Description                                                                                                                                                                              |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| date_created | Date when the initial contact or record was created                                                                                                                                      |
+| contacts_n   | Number of contacts on the initial contact date                                                                                                                                           |
+| contacts_n_1 | Number of repeat contacts 1 day after the initial contact                                                                                                                                |
+| contacts_n_2 | Number of repeat contacts 2 days after the initial contact                                                                                                                               |
+| contacts_n_3 | Number of repeat contacts 3 days after the initial contact                                                                                                                               |
+| contacts_n_4 | Number of repeat contacts 4 days after the initial contact                                                                                                                               |
+| contacts_n_5 | Number of repeat contacts 5 days after the initial contact                                                                                                                               |
+| contacts_n_6 | Number of repeat contacts 6 days after the initial contact                                                                                                                               |
+| contacts_n_7 | Number of repeat contacts 7 days after the initial contact                                                                                                                               |
+| new_type     | Type of problem reported: Type_1 (account management), Type_2 (technician troubleshooting), Type_3 (scheduling), Type_4 (construction), Type_5 (internet and wifi) |
+| new_market   | City service area where the contact occurred; anonymized as market_1, market_2, or market_3                                                                                              |
 
-## 📊 Dashboard - [Link](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+## 📊 Dashboard - [Link](https://public.tableau.com/shared/64JDZRJ8H?:display_count=n&:origin=viz_share_link)
 
 ### 📌 Dashboard Overview
 
-### 1️⃣ Seasonal Trends (Full-Year Patterns)
+### 1️⃣ Repeats by Month
 
-This tab focuses on **year-round behavior** and helps identify when and where Cyclistic experiences the highest demand.
+This tab visualizes **repeat calls** and **first contact calls**, helping the customer service team understand call frequency and patterns over time.
 
-#### **Trip Totals Line Chart**
-This visualization tracks the total number of trips per month over the selected time period.  
-It separates **customers** (casual riders) from **subscribers** (members), revealing several key points:
-
-- **Subscribers consistently generate the majority of trips**, showing strong brand loyalty and regular usage.
-- **Customer usage spikes in warmer months**, while subscriber usage remains more stable throughout the year.
-- **May to October** is the core active season, aligning with NYC's typical outdoor activity pattern.
-- Winter months show predictable drops in ridership due to weather conditions.
+#### **Repeat Calls by Month (Bar Chart)**
+- **Contacts_N** represents the initial contact date.  
+- Subsequent columns (**contacts_n_1** to **contacts_n_7**) track repeat calls up to seven days after the initial contact.  
+- Example: In January, 1,636 customers called again **1 day** after their first call, while only 575 called again **7 days** later.
 
 **How it was built:**  
-- Start Day → converted to **Month** and used on Columns  
-- SUM(Trip Count) → placed on Rows  
-- UserType → assigned to Color  
+- Month extracted from `date_created` → Columns  
+- SUM of each `contacts_n` column → Rows  
+- Each day after first contact → Color  
 
-#### **Trip Counts by Starting Neighborhood (Heat-Table)**  
-This table presents a geographic and temporal breakdown of ride volume:
+#### **First Contact Calls by Day of Week (Bar Chart)**
+- Shows the percentage of initial calls for each day of the week.  
+- Example: Only 8.71% of customers made first contact on Sunday in January; most reached out on Monday.  
 
-- Rows show **Borough** → **Neighborhood** → **ZIP code** hierarchy  
-- Columns represent **Year** and **Month**  
-- Cells display the **SUM of Trip Count**  
-- A color gradient visually emphasizes activity—lighter shades indicate higher trip counts
-
-Insights revealed:
-
-- **Lower East Side**, **Chelsea**, and **Clinton** stand out as the highest-activity zones.
-- These neighborhoods consistently perform well across most months, even during seasonal dips.
-- Winter activity is low across all neighborhoods, but some boroughs retain moderate subscriber traffic.
+**How it was built:**  
+- `date_created` → Day of Week → Columns  
+- SUM(Contacts_N) → Rows  
+- Percentage calculated by total calls per month  
 
 [![Seasonality Dashboard](Visualizations/Seasonal.png)](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
-### 2️⃣ Summer Trends (Peak-Season Patterns)
+### 2️⃣ Tables
 
-This tab zooms in on **July, August, and September**, the months with the highest ridership. It helps Cyclistic understand **peak conditions**, which typically represent the highest-stress period for operational resources.
+This tab includes **two tables**:
 
-#### **Main Borough Map**
-The primary map shows:
+1. **Repeat Calls by First Call Date**  
+   - Allows stakeholders to explore the number of different types of calls by date.  
+   - Breaks down repeat calls for each customer by day 0 to day 7.  
 
-- Total trip volumes by **borough**
-- Symbol sizes or color intensities proportional to activity
-- Immediate visual contrast between Manhattan, Brooklyn, Queens, Bronx, and Staten Island
-
-Manhattan dominates in both raw trip count and trip minutes, consistent with its dense layout and strong commuter flows.
-
-#### **Neighborhood-Level Table**
-Next to the map is a comparative table showing:
-
-- Trips by **user type** (customer vs. subscriber)  
-- Average trip duration  
-- Neighborhood-level differences in summer usage
-
-This table reveals:
-
-- Customers take fewer total trips but often have **longer durations**, suggesting leisure-oriented usage.
-- Subscribers take shorter but more frequent trips, consistent with commuting and errands.
-- Some neighborhoods have large imbalances between start and end station usage, indicating one-way traffic patterns.
-
-#### **Mini-Maps (July, August, September)**
-These three smaller maps highlight:
-
-- Month-by-month spatial differences  
-- Which neighborhoods surge at different points in summer  
-- How temporary events, tourism, or weather may influence ridership patterns
-
-#### **Interactive Filters**
-The tab includes several filters that let users drill into detail:
-
-- **User Type**  
-- **Metrics (Trips, Trip Minutes, etc.)**  
-- **Month**  
-- **Starting Neighborhood**  
-- **Ending Neighborhood**  
-
-Any filter or map click dynamically updates both the table and maps. This makes the tab suitable for **ad-hoc exploration** by business stakeholders.
+2. **Calls by Market and Problem Type**  
+   - Separates calls by `new_market` (market_1, market_2, market_3) and `new_type` (Type_1: Account Management, Type_2: Technician Troubleshooting, Type_3: Scheduling, Type_4: Construction, Type_5: Internet/WiFi).  
+   - Helps identify which markets experience the most calls and which problem types generate repeat calls.  
 
 [![Seasonality Dashboard](Visualizations/Maps.png)](https://public.tableau.com/shared/Z6P3M5X52?:display_count=n&:origin=viz_share_link)
 
 ---
 
-### 3️⃣ Top Stations (Trip Minutes Analysis)
+### 3️⃣ Day 1 Calls by Market
 
-This tab highlights neighborhoods that generate the **longest total ride times**, which helps uncover not just where trips start, but where riders are traveling **significant distances**.
+This visualization drills down into **first repeat calls**, showing which problem types generate repeat contacts across different markets.  
 
-#### **Stacked Horizontal Bar Charts**
-There are two bar charts:
-
-1. **Trip Minutes by Starting Neighborhood**  
-2. **Trip Minutes by Ending Neighborhood**
-
-Both charts show:
-
-- Total trip minutes  
-- Split by **customer** vs **subscriber**  
-- Sorted from highest to lowest  
-
-This reveals:
-
-- **Lower East Side** and **Chelsea/Clinton** lead in both start and end trip minutes.
-- High trip minutes suggest these neighborhoods support:
-  - Long leisure rides  
-  - Cross-borough travel  
-  - Tourist-heavy flows  
-- End-station trip minutes help identify where long-distance riders tend to conclude their journeys.
-
-**How it was built:** 
-- `SUM(Trip Minutes)` → Columns  
-- ZIP Code → Neighborhood → Borough → Rows  
-- UserType → Color  
+**Insights:**  
+- Allows identification of high-repeat problem types by market.  
+- Supports operational improvements and staffing adjustments.  
 
 [![Seasonality Dashboard](Visualizations/Top_Stations.png)](https://public.tableau.com/shared/WSRPKNGYF?:display_count=n&:origin=viz_share_link)
+
+
+### 4️⃣ Day 0 & Day 1 Calls
+
+This tab includes **two charts** visualizing call patterns in the first quarter:
+
+1. **Day 0 Calls by Market and Type Across Q1**  
+   - Tracks initial contact calls across markets and problem types.  
+
+2. **First Repeat Call by Market and Type Across Q1**  
+   - Tracks repeat calls following the first contact, highlighting which problems trigger additional follow-ups.  
+
+**Purpose:**  
+- Understand which markets and problem types generate the most calls.  
+- Identify areas where process improvements or proactive outreach may reduce repeat contacts.  
+
