@@ -85,7 +85,8 @@ GROUP BY
 ## Dashboard Contents
 
 ### Seasonal Trends  
-The first tab of the dashboard focuses on seasonality, or trends throughout the year, with the Trip Totals chart and the Trip Counts by Starting Neighborhood table. 
+The first tab of the dashboard focuses on seasonality, or trends throughout the year, with the Trip Totals chart and the Trip Counts by Starting Neighborhood table.
+
 ![Cyclistic Dashboard](https://public.tableau.com/static/images/Cy/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject/1.png)
 
 ### Summer Trends
