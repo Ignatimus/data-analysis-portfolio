@@ -239,4 +239,3 @@ This reveals:
 - ZIP Code → Neighborhood → Borough → Rows  
 - UserType → Color  
 
-This schema ensures both geographic hierarchy and user type segmentation remain visible and interpretable.
