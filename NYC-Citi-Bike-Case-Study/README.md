@@ -46,15 +46,11 @@ SELECT
     ROUND(CAST(TRI.tripduration / 60 AS INT64), -1) AS trip_minutes,
     COUNT(TRI.bikeid) AS trip_count
 
--- ============================================================
 -- PRIMARY DATA SOURCE: Citibike trip records
--- ============================================================
 FROM 
     bigquery-public-data.new_york_citibike.citibike_trips AS TRI
 
--- ============================================================
 -- GEOGRAPHIC JOINS: Match stations to zip codes
--- ============================================================
 -- Join start station coordinates to zip code boundaries
 INNER JOIN 
     bigquery-public-data.geo_us_boundaries.zip_codes ZIPSTART 
@@ -69,16 +65,12 @@ INNER JOIN
         ST_GEOGPOINT(TRI.end_station_longitude, TRI.end_station_latitude),
         ZIPEND.zip_code_geom)
 
--- ============================================================
 -- WEATHER DATA JOIN: Daily conditions from Central Park station
--- ============================================================
 INNER JOIN 
     bigquery-public-data.noaa_gsod.gsod20* AS WEA 
     ON PARSE_DATE("%Y%m%d", CONCAT(WEA.year, WEA.mo, WEA.da)) = DATE(TRI.starttime)
 
--- ============================================================
 -- NEIGHBORHOOD DETAILS: Add borough and neighborhood names
--- ============================================================
 -- Add neighborhood details for starting zip code
 INNER JOIN 
     `coursera-460808.cyclistic.zip_codes` AS ZIPSTARTNAME 
@@ -89,18 +81,14 @@ INNER JOIN
     `coursera-460808.cyclistic.zip_codes` AS ZIPENDNAME 
     ON ZIPEND.zip_code = CAST(ZIPENDNAME.zip AS STRING)
 
--- ============================================================
 -- FILTERS: Limit data to specific weather station and time period
--- ============================================================
 WHERE 
     -- Use only Central Park weather station data
     WEA.wban = '94728'
     -- Limit to 2014-2015 trip data
     AND EXTRACT(YEAR FROM DATE(TRI.starttime)) BETWEEN 2014 AND 2015
 
--- ============================================================
 -- GROUPING: Aggregate by all non-aggregated columns
--- ============================================================
 GROUP BY 
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 ```
