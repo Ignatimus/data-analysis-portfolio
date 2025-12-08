@@ -19,7 +19,7 @@ The company’s Customer Growth Team is creating a business plan for next year. 
 ## Querying the Data
 ```sql
 -- ============================================================
--- SELECT CLAUSE: Define output columns
+-- SELECT CLAUSE: Defining output columns
 -- ============================================================
 SELECT 
     -- User information
@@ -35,7 +35,7 @@ SELECT
     ZIPENDNAME.borough borough_end,
     ZIPENDNAME.neighborhood AS neighborhood_end,
     
-    -- Trip timing (adjusted 5 years forward for dashboard)
+    -- Trip timing (Adjusting 5 years forward for dashboarding)
     DATE_ADD(DATE(TRI.starttime), INTERVAL 5 YEAR) AS start_day,
     DATE_ADD(DATE(TRI.stoptime), INTERVAL 5 YEAR) AS stop_day,
     
@@ -44,7 +44,7 @@ SELECT
     WEA.wdsp AS day_mean_wind_speed,
     WEA.prcp day_total_precipitation,
     
-    -- Trip metrics (grouped into 10-minute intervals)
+    -- Trip metrics (Grouping trips into 10 minute intervals to reduces the number of rows)
     ROUND(CAST(TRI.tripduration / 60 AS INT64), -1) AS trip_minutes,
     COUNT(TRI.bikeid) AS trip_count
 
