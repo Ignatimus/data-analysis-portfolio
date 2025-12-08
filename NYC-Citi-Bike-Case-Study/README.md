@@ -40,25 +40,31 @@ SELECT
   ROUND(CAST(TRI.tripduration / 60 AS INT64), -1) AS trip_minutes,
 
   COUNT(TRI.bikeid) AS trip_count
+
 FROM
   `bigquery-public-data.new_york_citibike.citibike_trips` AS TRI
+
 INNER JOIN
   `bigquery-public-data.geo_us_boundaries.zip_codes` ZIPSTART
   ON ST_WITHIN(
     ST_GEOGPOINT(TRI.start_station_longitude, TRI.start_station_latitude),
     ZIPSTART.zip_code_geom)
+
 INNER JOIN
   `bigquery-public-data.geo_us_boundaries.zip_codes` ZIPEND
   ON ST_WITHIN(
     ST_GEOGPOINT(TRI.end_station_longitude, TRI.end_station_latitude),
     ZIPEND.zip_code_geom)
+
 INNER JOIN
   `bigquery-public-data.noaa_gsod.gsod20*` AS WEA
   ON PARSE_DATE("%Y%m%d", CONCAT(WEA.year, WEA.mo, WEA.da)) = DATE(TRI.starttime)
+
 INNER JOIN
   -- Note! Add your zip code table name, enclosed in backticks: `example_table`
   `(insert your table name) zipcodes` AS ZIPSTARTNAME
   ON ZIPSTART.zip_code = CAST(ZIPSTARTNAME.zip AS STRING)
+
 INNER JOIN
   -- Note! Add your zipcode table name, enclosed in backticks: `example_table`
   `(insert your table name) zipcodes` AS ZIPENDNAME
