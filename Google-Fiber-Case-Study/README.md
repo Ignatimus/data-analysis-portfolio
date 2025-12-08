@@ -1,4 +1,4 @@
-# Google Fiber - Google Business Intelligence Case Study
+# 🛜 Google Fiber - Google Business Intelligence Case Study
 
 **By Anatoli Ignatov | December 2025**
 
@@ -30,17 +30,17 @@ The team needs to understand **how often customers call customer support after t
 ```sql
 SELECT
     *
-FROM `your project.fiber.market_1`
+FROM `coursera-460808.fiber.market_1`
 UNION ALL
 
 SELECT
   *
-FROM `your project.fiber.market_2`
+FROM `coursera-460808.fiber.market_2`
 UNION ALL
 
 SELECT
   *
-FROM `your project.market_3`
+FROM `coursera-460808.fiber.market_3`
 ```
 ## 📄 Final Table
 
