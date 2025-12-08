@@ -129,6 +129,140 @@ GROUP BY
 ### 📌 Dashboard Overview
 
 #### 1️⃣ Seasonal Trends  
+
+The dashboard is organized into three main tabs. Each tab highlights a different aspect of customer behavior, geographic demand, and seasonal patterns within the Cyclistic bike-sharing system. Together, they form a complete picture of user activity across New York City.
+
+---
+
+### 1️⃣ Seasonal Trends (Full-Year Patterns)
+
+This tab focuses on **year-round behavior** and helps identify when and where Cyclistic experiences the highest demand.
+
+#### **Trip Totals Line Chart**
+This visualization tracks the total number of trips per month over the selected time period.  
+It separates **customers** (casual riders) from **subscribers** (members), revealing several key points:
+
+- **Subscribers consistently generate the majority of trips**, showing strong brand loyalty and regular usage.
+- **Customer usage spikes in warmer months**, while subscriber usage remains more stable throughout the year.
+- **May to October** is the core active season, aligning with NYC's typical outdoor activity pattern.
+- Winter months show predictable drops in ridership due to weather conditions.
+
+**How it was built:**  
+- Start Day → converted to **Month** and used on Columns  
+- SUM(Trip Count) → placed on Rows  
+- UserType → assigned to Color  
+
+#### **Trip Counts by Starting Neighborhood (Heat-Table)**  
+This table presents a geographic and temporal breakdown of ride volume:
+
+- Rows show **Borough** → **Neighborhood** → **ZIP code** hierarchy  
+- Columns represent **Year** and **Month**  
+- Cells display the **SUM of Trip Count**  
+- A color gradient visually emphasizes activity—lighter shades indicate higher trip counts
+
+Insights revealed:
+
+- **Lower East Side**, **Chelsea**, and **Clinton** stand out as the highest-activity zones.
+- These neighborhoods consistently perform well across most months, even during seasonal dips.
+- Winter activity is low across all neighborhoods, but some boroughs retain moderate subscriber traffic.
+
+---
+
+### 2️⃣ Summer Trends (Peak-Season Patterns)
+
+This tab zooms in on **July, August, and September**, the months with the highest ridership. It helps Cyclistic understand **peak conditions**, which typically represent the highest-stress period for operational resources.
+
+#### **Main Borough Map**
+The primary map shows:
+
+- Total trip volumes by **borough**
+- Symbol sizes or color intensities proportional to activity
+- Immediate visual contrast between Manhattan, Brooklyn, Queens, Bronx, and Staten Island
+
+Manhattan dominates in both raw trip count and trip minutes, consistent with its dense layout and strong commuter flows.
+
+#### **Neighborhood-Level Table**
+Below the map is a comparative table showing:
+
+- Trips by **user type** (customer vs. subscriber)  
+- Average trip duration  
+- Neighborhood-level differences in summer usage
+
+This table reveals:
+
+- Customers take fewer total trips but often have **longer durations**, suggesting leisure-oriented usage.
+- Subscribers take shorter but more frequent trips, consistent with commuting and errands.
+- Some neighborhoods have large imbalances between start and end station usage, indicating one-way traffic patterns.
+
+#### **Mini-Maps (July, August, September)**
+These three smaller maps highlight:
+
+- Month-by-month spatial differences  
+- Which neighborhoods surge at different points in summer  
+- How temporary events, tourism, or weather may influence ridership patterns
+
+For example:
+- July typically shows heavy early-summer tourism patterns.
+- August often has commuter slowdowns but higher visitor activity.
+- September shifts toward commuter-heavy traffic as work routines resume.
+
+#### **Interactive Filters**
+The tab includes several filters that let users drill into detail:
+
+- **User Type**  
+- **Metrics (Trips, Trip Minutes, etc.)**  
+- **Month**  
+- **Starting Neighborhood**  
+- **Ending Neighborhood**  
+
+Any filter or map click dynamically updates both the table and maps. This makes the tab suitable for **ad-hoc exploration** by business stakeholders.
+
+---
+
+### 3️⃣ Top Stations (Trip Minutes Analysis)
+
+This tab highlights neighborhoods that generate the **longest total ride times**, which helps uncover not just where trips start, but where riders are traveling **significant distances**.
+
+#### **Stacked Horizontal Bar Charts**
+There are two bar charts:
+
+1. **Trip Minutes by Starting Neighborhood**  
+2. **Trip Minutes by Ending Neighborhood**
+
+Both charts show:
+
+- Total trip minutes  
+- Split by **customer** vs **subscriber**  
+- Sorted from highest to lowest  
+
+This reveals:
+
+- **Lower East Side** and **Chelsea/Clinton** lead in both start and end trip minutes.
+- High trip minutes suggest these neighborhoods support:
+  - Long leisure rides  
+  - Cross-borough travel  
+  - Tourist-heavy flows  
+- End-station trip minutes help identify where long-distance riders tend to conclude their journeys.
+
+#### **Why Trip Minutes Matter**
+Trip minutes are a strong signal of:
+
+- Route attractiveness  
+- Rider satisfaction  
+- Infrastructure suitability (bike lanes, scenic routes, etc.)  
+- Potential station congestion or rebalancing needs
+
+Because the visualization separates start vs. end patterns, it highlights whether long rides originate or terminate in different areas.
+
+#### **Chart Construction Breakdown**
+- `SUM(Trip Minutes)` → Columns  
+- ZIP Code → Neighborhood → Borough → Rows  
+- UserType → Color  
+
+This schema ensures both geographic hierarchy and user type segmentation remain visible and interpretable.
+
+
+
 The first tab of the dashboard focuses on seasonality, or trends throughout the year, with the Trip Totals chart and the Trip Counts by Starting Neighborhood table.
 
 **Trips Total Chart**
