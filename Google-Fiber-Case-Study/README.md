@@ -1,4 +1,6 @@
-# 🛜 Google Fiber - Google Business Intelligence Case Study
+# 🛜 <img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/c0209dff-4f01-4e3f-908f-6781c1317577" />
+![Uploading image.png…]()
+Google Fiber - Google Business Intelligence Case Study
 
 **By Anatoli Ignatov | December 2025**
 
