@@ -18,9 +18,7 @@ The company’s Customer Growth Team is creating a business plan for next year. 
 
 ## Querying the Data
 ```sql
--- ============================================================
 -- SELECT CLAUSE: Defining output columns
--- ============================================================
 SELECT 
     -- User information
     TRI.usertype,
