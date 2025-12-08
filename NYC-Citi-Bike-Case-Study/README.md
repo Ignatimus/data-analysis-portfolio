@@ -5,7 +5,7 @@
 [Tableau Public Dashboard](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## 🗂️ About the repo
-This folder contains the **README** for the **Cyclistic Business Intelligence Capstone Project**. The CSV files are not included due to size limits. 
+This folder contains the **README** for the **Cyclistic Business Intelligence Capstone Project**. A **Visualizations** folder is included with exported images of the Tableau dashboard. The CSV files are not included due to size limits. 
 
 Inside this README you will find:  
 1. Dataset sources  
@@ -195,7 +195,6 @@ These three smaller maps highlight:
 - Which neighborhoods surge at different points in summer  
 - How temporary events, tourism, or weather may influence ridership patterns
 
-
 #### **Interactive Filters**
 The tab includes several filters that let users drill into detail:
 
@@ -206,6 +205,9 @@ The tab includes several filters that let users drill into detail:
 - **Ending Neighborhood**  
 
 Any filter or map click dynamically updates both the table and maps. This makes the tab suitable for **ad-hoc exploration** by business stakeholders.
+
+### Page 1: Seasonality Analysis
+[![Seasonality Dashboard](Visualizations/Seasonal.png)](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject
 
 ---
 
