@@ -11,5 +11,4 @@ Available on **Google Cloud**:
 * Tableau
 
 ## ❓ Business Problem
-The company’s Customer Growth Team is creating a business plan for next year. They want to understand how their customers are using their bikes; 
-**Their top priority is identifying customer demand at different station locations.**
+The company’s Customer Growth Team is creating a business plan for next year. They want to understand how their customers are using their bikes; **Their top priority is identifying customer demand at different station locations.**
