@@ -25,13 +25,15 @@ The company’s Customer Growth Team is creating a business plan for next year. 
   ZIPEND.zip_code AS zip_code_end,
   ZIPENDNAME.borough borough_end,
   ZIPENDNAME.neighborhood AS neighborhood_end,
-  -- Since this is a fictional dashboard, you can add 5 years to make it look recent
+  
+  -- I add 5 years to make it look recent
   DATE_ADD(DATE(TRI.starttime), INTERVAL 5 YEAR) AS start_day,
   DATE_ADD(DATE(TRI.stoptime), INTERVAL 5 YEAR) AS stop_day,
   WEA.temp AS day_mean_temperature, -- Mean temp
   WEA.wdsp AS day_mean_wind_speed, -- Mean wind speed
   WEA.prcp day_total_precipitation, -- Total precipitation
-  -- Group trips into 10 minute intervals to reduces the number of rows
+  
+  -- I Group trips into 10 minute intervals to reduces the number of rows
   ROUND(CAST(TRI.tripduration / 60 AS INT64), -1) AS trip_minutes,
   COUNT(TRI.bikeid) AS trip_count
 FROM
