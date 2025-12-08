@@ -51,6 +51,7 @@ FROM
     bigquery-public-data.new_york_citibike.citibike_trips AS TRI
 
 -- GEOGRAPHIC JOINS: Match stations to zip codes
+
 -- Join start station coordinates to zip code boundaries
 INNER JOIN 
     bigquery-public-data.geo_us_boundaries.zip_codes ZIPSTART 
@@ -71,6 +72,7 @@ INNER JOIN
     ON PARSE_DATE("%Y%m%d", CONCAT(WEA.year, WEA.mo, WEA.da)) = DATE(TRI.starttime)
 
 -- NEIGHBORHOOD DETAILS: Add borough and neighborhood names
+
 -- Add neighborhood details for starting zip code
 INNER JOIN 
     `coursera-460808.cyclistic.zip_codes` AS ZIPSTARTNAME 
