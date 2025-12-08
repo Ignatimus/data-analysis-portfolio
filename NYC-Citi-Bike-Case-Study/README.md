@@ -176,7 +176,7 @@ The primary map shows:
 Manhattan dominates in both raw trip count and trip minutes, consistent with its dense layout and strong commuter flows.
 
 #### **Neighborhood-Level Table**
-Below the map is a comparative table showing:
+Next to the map is a comparative table showing:
 
 - Trips by **user type** (customer vs. subscriber)  
 - Average trip duration  
