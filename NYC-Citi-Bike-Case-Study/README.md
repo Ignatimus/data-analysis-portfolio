@@ -52,14 +52,14 @@ FROM
 
 -- GEOGRAPHIC JOINS: Match stations to zip codes
 
--- Join start station coordinates to zip code boundaries
+    -- Join start station coordinates to zip code boundaries
 INNER JOIN 
     bigquery-public-data.geo_us_boundaries.zip_codes ZIPSTART 
     ON ST_WITHIN(
         ST_GEOGPOINT(TRI.start_station_longitude, TRI.start_station_latitude),
         ZIPSTART.zip_code_geom)
 
--- Join end station coordinates to zip code boundaries
+    -- Join end station coordinates to zip code boundaries
 INNER JOIN 
     bigquery-public-data.geo_us_boundaries.zip_codes ZIPEND 
     ON ST_WITHIN(
@@ -73,12 +73,12 @@ INNER JOIN
 
 -- NEIGHBORHOOD DETAILS: Add borough and neighborhood names
 
--- Add neighborhood details for starting zip code
+    -- Add neighborhood details for starting zip code
 INNER JOIN 
     `coursera-460808.cyclistic.zip_codes` AS ZIPSTARTNAME 
     ON ZIPSTART.zip_code = CAST(ZIPSTARTNAME.zip AS STRING)
 
--- Add neighborhood details for ending zip code
+    -- Add neighborhood details for ending zip code
 INNER JOIN 
     `coursera-460808.cyclistic.zip_codes` AS ZIPENDNAME 
     ON ZIPEND.zip_code = CAST(ZIPENDNAME.zip AS STRING)
