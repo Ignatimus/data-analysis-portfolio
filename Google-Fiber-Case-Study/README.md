@@ -86,7 +86,7 @@ This tab visualizes **repeat calls** and **first contact calls**, helping the cu
 - SUM(Contacts_N) → Rows  
 - Percentage calculated by total calls per month  
 
-[![Seasonality Dashboard](Visualizations/Seasonal.png)](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![Repeats_by_Month Dashboard](Visualizations/Repeats_by_Month&Weekday.png)](https://public.tableau.com/shared/GR23MM2BS?:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -102,7 +102,7 @@ This tab includes **two tables**:
    - Separates calls by `new_market` (market_1, market_2, market_3) and `new_type` (Type_1: Account Management, Type_2: Technician Troubleshooting, Type_3: Scheduling, Type_4: Construction, Type_5: Internet/WiFi).  
    - Helps identify which markets experience the most calls and which problem types generate repeat calls.  
 
-[![Seasonality Dashboard](Visualizations/Maps.png)](https://public.tableau.com/shared/Z6P3M5X52?:display_count=n&:origin=viz_share_link)
+[![Tables Dashboard](Visualizations/Tables.png)](https://public.tableau.com/views/FiberDashboard_17651878097130/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -114,7 +114,7 @@ This visualization drills down into **first repeat calls**, showing which proble
 - Allows identification of high-repeat problem types by market.  
 - Supports operational improvements and staffing adjustments.  
 
-[![Seasonality Dashboard](Visualizations/Top_Stations.png)](https://public.tableau.com/shared/WSRPKNGYF?:display_count=n&:origin=viz_share_link)
+[![Repeats Dashboard](Visualizations/Repeat_Calls_by_Market&Type.png)](https://public.tableau.com/shared/4ZW3C23FK?:display_count=n&:origin=viz_share_link)
 
 
 ### 4️⃣ Day 0 & Day 1 Calls
@@ -131,3 +131,4 @@ This tab includes **two charts** visualizing call patterns in the first quarter:
 - Understand which markets and problem types generate the most calls.  
 - Identify areas where process improvements or proactive outreach may reduce repeat contacts.  
 
+[![Repeats_by_Weekkday Dashboard](Visualizations/Repeats_by_Month&Weekday.png)](https://public.tableau.com/shared/NNDM4XD97?:display_count=n&:origin=viz_share_link)
