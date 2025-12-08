@@ -94,7 +94,7 @@ The second tab of the dashboard is a map of seasonal trends of bike trips in eac
 
 This map features several filters to focus on specific **user types**, **metrics**, **months**, **starting neighborhoods**, and **ending neighborhoods**. Using any of these filters or clicking on a borough in one of the maps updates the table and maps to focus on your selection in greater detail.
 
-[![Cyclistic Dashboard](https://public.tableau.com/static/images/Cy/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject/2.png)](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject)
+[![Page 2](https://public.tableau.com/static/images/HZ/HZ7HJSP2J/1.png)](https://public.tableau.com/shared/HZ7HJSP2J?:display_count=n&:origin=viz_share_link)
 
 ### Top Stations
 The third and final tab of the dashboard is a comparison of the total number of trip minutes by starting neighborhood and ending neighborhood for both customers and subscribers. The two charts are horizontal stacked bar graphs that are ordered from highest to lowest number of minutes (between customers and subscribers combined).
