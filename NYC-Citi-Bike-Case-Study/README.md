@@ -89,6 +89,23 @@ GROUP BY
   12,
   13 
 ```
+| Variable                | Description                                                |
+| ----------------------- | ---------------------------------------------------------- |
+| usertype                | Type of user (e.g., subscriber vs customer)                |
+| zip_code_start          | ZIP code where the trip started                            |
+| borough_start           | Borough where the trip started                             |
+| neighborhood_start      | Neighborhood where the trip started                        |
+| zip_code_end            | ZIP code where the trip ended                              |
+| borough_end             | Borough where the trip ended                               |
+| neighborhood_end        | Neighborhood where the trip ended                          |
+| start_day               | Date when the trip started                                 |
+| stop_day                | Date when the trip ended                                   |
+| day_mean_temperature    | Average daily temperature for that date                    |
+| day_mean_wind_speed     | Average daily wind speed for that date                     |
+| day_total_precipitation | Total daily precipitation for that date                    |
+| trip_minutes            | Duration of the trip in minutes                            |
+| trip_count              | Number of trips aggregated for that date/route combination |
+
 ## Dashboard - [Link](https://public.tableau.com/views/CyclisticNYCDashboard_17645978518660/Cyclistic-GoogleBusinessIntelligenceCapstoneProject?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Dashboard Contents
