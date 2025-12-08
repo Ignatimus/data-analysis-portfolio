@@ -17,7 +17,8 @@ Available on **Google Cloud**:
 The company’s Customer Growth Team is creating a business plan for next year. They want to understand how their customers are using their bikes; **Their top priority is identifying customer demand at different station locations.**
 
 ## Querying the Data
-``SELECT
+```sql
+SELECT
   TRI.usertype,
   ZIPSTART.zip_code AS zip_code_start,
   ZIPSTARTNAME.borough borough_start,
@@ -77,7 +78,7 @@ GROUP BY
   10,
   11,
   12,
-  13`` 
+  13 
 
 ## Dashboard Contents
 
