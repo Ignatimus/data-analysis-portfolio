@@ -201,10 +201,6 @@ These three smaller maps highlight:
 - Which neighborhoods surge at different points in summer  
 - How temporary events, tourism, or weather may influence ridership patterns
 
-For example:
-- July typically shows heavy early-summer tourism patterns.
-- August often has commuter slowdowns but higher visitor activity.
-- September shifts toward commuter-heavy traffic as work routines resume.
 
 #### **Interactive Filters**
 The tab includes several filters that let users drill into detail:
