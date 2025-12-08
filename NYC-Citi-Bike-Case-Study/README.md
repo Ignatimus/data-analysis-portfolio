@@ -208,7 +208,7 @@ The tab includes several filters that let users drill into detail:
 
 Any filter or map click dynamically updates both the table and maps. This makes the tab suitable for **ad-hoc exploration** by business stakeholders.
 
-[![Seasonality Dashboard](Visualizations/Maps.png)](https://public.tableau.com/shared/Z6P3M5X52?:display_count=n&:origin=viz_share_link)
+[![Maps Dashboard](Visualizations/Maps.png)](https://public.tableau.com/shared/Z6P3M5X52?:display_count=n&:origin=viz_share_link)
 
 ---
 
@@ -242,4 +242,4 @@ This reveals:
 - ZIP Code → Neighborhood → Borough → Rows  
 - UserType → Color  
 
-[![Seasonality Dashboard](Visualizations/Top_Stations.png)](https://public.tableau.com/shared/WSRPKNGYF?:display_count=n&:origin=viz_share_link)
+[![TopStations Dashboard](Visualizations/Top_Stations.png)](https://public.tableau.com/shared/WSRPKNGYF?:display_count=n&:origin=viz_share_link)
