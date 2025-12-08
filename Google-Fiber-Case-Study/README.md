@@ -5,7 +5,7 @@
 [Tableau Public Dashboard](https://public.tableau.com/shared/64JDZRJ8H?:display_count=n&:origin=viz_share_link)
 
 ## 🗂️ About the repo
-This folder contains the **README** for the **Google Fiber Business Intelligence Capstone Project**. A **Visualizations** folder is included with exported images of the Tableau dashboard. The CSV files are included as well. 
+This folder contains the **README** for the **Google Fiber Business Intelligence Capstone Project**. A **Visualizations** folder is included with exported images of the Tableau dashboard. The CSV files are included in the **Datasets** folder. 
 
 Inside this README you will find:  
 1. Dataset sources  
