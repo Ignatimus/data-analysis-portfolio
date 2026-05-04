@@ -18,11 +18,11 @@ Each project explores real-world problems using data from various domains, and i
 ## 🧰 Tools & Languages to expect:
 
 * **Spreadsheets** (Excel, Google Sheets)
-* **R** (tidyverse, ggplot2, RStudio)
-* **SQL** (BigQuery)
+* **R** (tidyverse, ggplot2, tidymodels, shiny dashboards)
+* **Python** (numpy, pandas, matplotlib, seaborn, plotly, scikit learn)
+* **SQL**
 * **Tableau**
 * **Power BI** 
-* **Python** (numpy, pandas, matplotlib, seaborn, plotly, scikit learn)
 
 ---
 
