@@ -43,4 +43,4 @@ Each folder in this repo contains one full project. Inside each project folder, 
 
 ---
 
-**2025 Anatoli Ignatov**
+**2026 Anatoli Ignatov**
