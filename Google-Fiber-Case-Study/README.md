@@ -2,7 +2,7 @@
 
 **By Anatoli Ignatov | December 2025**
 
-[Tableau Public Dashboard](https://public.tableau.com/views/FiberDashboard_17651878097130/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableau Public Dashboard](https://public.tableau.com/shared/F582FPZQW?:display_count=n&:origin=viz_share_link)
 ## 🗂️ About the repo
 This folder contains the **README** for the **Google Fiber Business Intelligence Capstone Project**. A **Visualizations** folder is included with exported images of the Tableau dashboard. The CSV files are included in the **Datasets** folder. 
 
