@@ -17,7 +17,7 @@ This folder contains a `.ipynb` **Jupyter Notebook** and supporting materials fo
 
 Additionally, there is a **Visualizations** folder containing exported plots and charts generated throughout the analysis.
 
-This **README** also includes a [Binder link](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/main?urlpath=%2Fdoc%2Ftree%2FBike-Sharing-Demand-Case-Study%2FCapstone-Project-Seoul-Bike-Sharing-Jupyter-Notebook.ipynb) to launch the notebook interactively in the browser. For easier navigation inside the notebook, use the **“Table of Contents”** panel on the left side.
+This **README** also includes a [Binder link](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/main?urlpath=%2Fdoc%2Ftree%2FBike-Sharing-Demand-Case-Study%2FCapstone-Project-Seoul-Bike-Sharing-Jupyter-Notebook.ipynb) to launch the notebook via **Binder**, which I recommend using instead of opening the notebook directly from this repo (note: it may take a minute to load).
 
 ---
 
