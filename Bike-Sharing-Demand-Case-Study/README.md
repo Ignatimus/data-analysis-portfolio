@@ -2,7 +2,7 @@
 
 **By Anatoli Ignatov | May 2026**
 
-[Jupyter Notebook Binder](https://mybinder.org/)  
+[Jupyter Notebook Binder]([https://mybinder.org/](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/main?urlpath=%2Fdoc%2Ftree%2FBike-Sharing-Demand-Case-Study%2FCapstone-Project-Seoul-Bike-Sharing-Jupyter-Notebook.ipynb))  
 
 ## 🗂️ About the repo
 This folder contains a `.ipynb` **Jupyter Notebook** and supporting materials for an end-to-end data science project focused on predicting hourly bike-sharing demand in Seoul, South Korea. Inside the notebook you will find:
@@ -17,7 +17,7 @@ This folder contains a `.ipynb` **Jupyter Notebook** and supporting materials fo
 
 Additionally, there is a **Visualizations** folder containing exported plots and charts generated throughout the analysis.
 
-This **README** also includes a [Binder link](https://mybinder.org/) to launch the notebook interactively in the browser. For easier navigation inside the notebook, use the **“Table of Contents”** panel on the left side.
+This **README** also includes a [Binder link]([https://mybinder.org/](https://mybinder.org/v2/gh/Ignatimus/data-analysis-portfolio/main?urlpath=%2Fdoc%2Ftree%2FBike-Sharing-Demand-Case-Study%2FCapstone-Project-Seoul-Bike-Sharing-Jupyter-Notebook.ipynb)) to launch the notebook interactively in the browser. For easier navigation inside the notebook, use the **“Table of Contents”** panel on the left side.
 
 ---
 
