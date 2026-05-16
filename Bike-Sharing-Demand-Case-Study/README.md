@@ -109,12 +109,6 @@ The refined regression models significantly outperformed the baseline specificat
 
 ---
 
-## ✅ Recommendations
-1. Increase bike availability during commuting hours and high-demand seasons.
-2. Use weather forecasts proactively for operational planning.
-3. Prepare additional bike inventory during warm, dry conditions.
-4. Reduce redistribution delays during peak seasonal demand.
-5. Continue improving forecasting models with additional external variables such as holidays, events, and traffic patterns.
-6. Explore advanced machine learning models for future performance improvements.
+## PART 2 WORK IN PROGRESS
 
 ---
