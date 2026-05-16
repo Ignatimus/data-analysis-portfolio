@@ -1,0 +1,11 @@
+install.packages(c(
+  "tidyverse",
+  "tidymodels",
+  "ggplot2",
+  "dplyr",
+  "stringr",
+  "rvest",
+  "httr",
+  "RSQLite",
+  "glmnet"
+))
