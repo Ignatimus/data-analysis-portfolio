@@ -15,7 +15,7 @@ Each project explores real-world problems using data from various domains, and i
 
 ---
 
-## 🧰 Tools & Languages to expect:
+## 🧰 Tools & Languages:
 
 * **Spreadsheets** (Excel, Google Sheets)
 * **R** (tidyverse, ggplot2, tidymodels, shiny dashboards)
