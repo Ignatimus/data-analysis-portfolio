@@ -109,6 +109,181 @@ The refined regression models significantly outperformed the baseline specificat
 
 ---
 
-## PART 2 WORK IN PROGRESS
+## 📊 Interactive Shiny Dashboard
+
+To complement the notebook analysis, I developed and deployed an interactive **R Shiny dashboard** that transforms the regression model into a practical forecasting application. Rather than simply presenting historical analysis, the dashboard allows users to explore supported cities, visualize recent weather conditions, and generate bike demand predictions using live weather data.
+
+🔗 **Live Dashboard:** https://019efabf-1f9d-038b-8f82-26fb655d258a.share.connect.posit.cloud/
+
+Unlike the notebook, which focuses on exploratory analysis and model experimentation, the dashboard serves as the project's deployment layer—demonstrating how a trained machine learning model can be integrated into an interactive analytical application.
+
+## 🧠 A New Prediction Model Was Required
+
+The regression models developed in the notebook achieved stronger predictive performance by utilizing every informative feature available in the original Seoul Bike Sharing dataset.
+
+However, deploying a real-world forecasting application introduced a practical constraint:
+
+The dashboard retrieves **live weather forecasts** from the **OpenWeather API**, which does **not** provide every feature contained in the historical dataset. Most notably, the API does **not** include **Solar Radiation**, one of the predictors used in the notebook's refined regression models.
+
+Because a deployed model can only make predictions using variables available at prediction time, the original notebook models could not be used directly.
+
+Rather than attempting to estimate or impute unavailable variables, I trained a completely new regression model using only features that are both:
+
+- available in the historical training data, and
+- supplied by the OpenWeather API.
+
+This ensures that every prediction shown in the dashboard is generated using actual live weather measurements rather than artificially estimated inputs, making the application suitable for real-world deployment.
+
+---
+
+## ⚙️ Production Regression Model
+
+The dashboard uses a regularized **Elastic Net Regression** model implemented with the **tidymodels** ecosystem.
+
+### Model Pipeline
+
+The workflow consisted of:
+
+- Removing unavailable that don't contribute to prediction or aren't available on the API side (`DATE`, `FUNCTIONING_DAY`, `SOLAR_RADIATION`)
+- 75/25 Train/Test split
+- 5-fold Cross Validation
+- Hyperparameter tuning for:
+  - penalty (λ)
+  - mixture (Elastic Net mixing parameter)
+- Feature engineering using a preprocessing recipe
+- Final model training using **glmnet**
+
+### Feature Engineering
+
+The preprocessing pipeline includes:
+
+- Conversion of **Hour** into a categorical variable
+- One-hot encoding of categorical predictors
+- Normalization of numeric predictors
+- Polynomial feature generation (degree 3)
+- Interaction terms between:
+  - Temperature × Summer
+  - Temperature × Winter
+  - Temperature × Humidity
+
+This allows the model to capture nonlinear weather relationships while maintaining good generalization through Elastic Net regularization.
+
+---
+
+## 📈 Production Model Performance
+
+Although this model excludes Solar Radiation, it still produces strong predictive performance suitable for an interactive forecasting application.
+
+| Metric | Value |
+|---------|------:|
+| RMSE | **334** |
+| R² | **0.723** |
+
+
+---
+
+## 🗺️ Dashboard Features
+
+Current functionality includes:
+
+- Interactive Leaflet map displaying supported East Asian cities
+- City selection through an interactive dropdown menu
+- Live weather forecast retrieval from the OpenWeather API
+- Hourly bike demand prediction using the trained Elastic Net model
+- Temperature trend visualization
+- Bike demand forecast visualization
+- Humidity vs. predicted demand analysis
+- Dynamic plots generated from live forecast data
+
+Each supported city automatically updates the map location, weather data, visualizations, and bike demand predictions.
+
+---
+
+## 🛠️ Technologies Used
+
+The dashboard was developed using:
+
+- **R Shiny**
+- **tidymodels**
+- **glmnet**
+- **Leaflet**
+- **ggplot2**
+- **dplyr**
+- **httr**
+- **jsonlite**
+- **OpenWeather API**
+
+---
+
+
+## 🖼️ Dashboard Preview
+
+### Interactive Map
+
+![Dashboard Map](Bike-Sharing-Demand-Case-Study/Visualizations/Screenshot From 2026-07-06 18-52-02.png)
+
+The Leaflet map provides a geographical overview of supported cities. Selecting a location centers the map while synchronizing the dashboard's prediction pipeline.
+
+---
+
+### City Selection Interface
+
+![Dashboard City Selection](Bike-Sharing-Demand-Case-Study/Visualizations/Screenshot From 2026-07-06 18-52-16.png)
+
+The application allows users to select among multiple East Asian cities with comparable public bike-sharing systems. Selecting a city dynamically updates all visualizations and predictions.
+
+---
+
+### Live Forecast Dashboard
+
+![Dashboard Forecast](Bike-Sharing-Demand-Case-Study/Visualizations/Screenshot From 2026-07-06 18-52-33.png)
+
+For each selected city, the dashboard displays:
+
+- Live temperature forecasts
+- Predicted hourly bike demand
+- Humidity versus predicted demand relationship
+- Interactive visualizations generated from real-time weather data
+
+---
+
+## 💡 Project Outcome
+
+This dashboard represents the deployment stage of the project, bridging statistical modeling with an interactive analytical application.
+
+Combined with the notebook, the complete project demonstrates an end-to-end data science workflow including:
+
+- Data acquisition
+- Web scraping
+- REST API integration
+- Data cleaning and preprocessing
+- SQL analysis
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Regression modeling
+- Hyperparameter tuning
+- Model evaluation
+- Interactive dashboard development
+- Deployment of a machine learning application using live external data
+
+The result is a reproducible analytics project that moves beyond offline experimentation by delivering real-time predictions through an accessible web interface.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
