@@ -174,10 +174,10 @@ This allows the model to capture nonlinear weather relationships while maintaini
 
 Although this model excludes Solar Radiation, it still produces strong predictive performance suitable for an interactive forecasting application.
 
-| Metric | Value |
-|---------|------:|
-| RMSE | **334** |
-| R² | **0.723** |
+| Metric | Value | What it means |
+|---------|------:| -------------------------------------------|
+| RMSE ↓ | **334** | Predictions are off by ~334 bikes on average |
+| R² ↑ | **0.723** | ~72% of demand patterns explained |
 
 
 ---
