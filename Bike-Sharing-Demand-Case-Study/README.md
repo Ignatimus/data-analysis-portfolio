@@ -113,7 +113,7 @@ The refined regression models significantly outperformed the baseline specificat
 
 To complement the notebook analysis, I developed and deployed an interactive **R Shiny dashboard** that transforms the regression model into a practical forecasting application. Rather than simply presenting historical analysis, the dashboard allows users to explore supported cities, visualize recent weather conditions, and generate bike demand predictions using live weather data.
 
-🔗 **Live Dashboard:** https://019efabf-1f9d-038b-8f82-26fb655d258a.share.connect.posit.cloud/
+🔗 **Live Dashboard:** [East Asia Bike Demand Forecasting App](https://019efabf-1f9d-038b-8f82-26fb655d258a.share.connect.posit.cloud/)
 
 Unlike the notebook, which focuses on exploratory analysis and model experimentation, the dashboard serves as the project's deployment layer—demonstrating how a trained machine learning model can be integrated into an interactive analytical application.
 
@@ -220,7 +220,7 @@ The dashboard was developed using:
 
 ### Interactive Map
 
-![Dashboard Map](Bike-Sharing-Demand-Case-Study/Visualizations/Screenshot From 2026-07-06 18-52-02.png)
+![Dashboard Map](Visualizations/Dashboard-Map.png)
 
 The Leaflet map provides a geographical overview of supported cities. Selecting a location centers the map while synchronizing the dashboard's prediction pipeline.
 
@@ -228,7 +228,7 @@ The Leaflet map provides a geographical overview of supported cities. Selecting 
 
 ### City Selection Interface
 
-![Dashboard City Selection](Bike-Sharing-Demand-Case-Study/Visualizations/Screenshot From 2026-07-06 18-52-16.png)
+![Dashboard City Selection](Visualizations/Dashboard-Selection.png)
 
 The application allows users to select among multiple East Asian cities with comparable public bike-sharing systems. Selecting a city dynamically updates all visualizations and predictions.
 
@@ -236,7 +236,7 @@ The application allows users to select among multiple East Asian cities with com
 
 ### Live Forecast Dashboard
 
-![Dashboard Forecast](Bike-Sharing-Demand-Case-Study/Visualizations/Screenshot From 2026-07-06 18-52-33.png)
+![Dashboard Forecast](Visualizations/Dashboard-Forecast.png)
 
 For each selected city, the dashboard displays:
 
